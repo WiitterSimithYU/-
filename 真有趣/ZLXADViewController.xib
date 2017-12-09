@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLXADViewController">
+            <connections>
+                <outlet property="JumpBtn" destination="zwG-MQ-iCR" id="7Ib-28-naz"/>
+                <outlet property="LaunchImage" destination="n3k-wR-6wG" id="fCM-Rb-uEr"/>
+                <outlet property="adContainView" destination="NIo-8N-BnA" id="rZy-CD-Vzb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n3k-wR-6wG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-8N-BnA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-MQ-iCR">
+                    <rect key="frame" x="248" y="10" width="62" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="KGT-FT-7y6"/>
+                        <constraint firstAttribute="height" constant="30" id="kX9-xe-JeO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="跳转（5）" backgroundImage="pushguidebg">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ClickButton:" destination="-1" eventType="touchUpInside" id="Iij-XN-mch"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NIo-8N-BnA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NRz-nW-7z9"/>
+                <constraint firstAttribute="trailing" secondItem="n3k-wR-6wG" secondAttribute="trailing" id="T8U-N6-9ME"/>
+                <constraint firstAttribute="trailing" secondItem="zwG-MQ-iCR" secondAttribute="trailing" constant="10" id="i5Z-XJ-psf"/>
+                <constraint firstItem="n3k-wR-6wG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jFD-ev-gP6"/>
+                <constraint firstItem="n3k-wR-6wG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jaT-bb-NyN"/>
+                <constraint firstAttribute="trailing" secondItem="NIo-8N-BnA" secondAttribute="trailing" id="nlh-g6-JEz"/>
+                <constraint firstAttribute="bottom" secondItem="n3k-wR-6wG" secondAttribute="bottom" id="pCr-O2-Y5f"/>
+                <constraint firstItem="NIo-8N-BnA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ty0-eu-taa"/>
+                <constraint firstItem="zwG-MQ-iCR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="xlL-lj-UA0"/>
+                <constraint firstAttribute="bottom" secondItem="NIo-8N-BnA" secondAttribute="bottom" id="yJT-r3-3FO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="359" y="145"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pushguidebg" width="400" height="200"/>
+    </resources>
+</document>

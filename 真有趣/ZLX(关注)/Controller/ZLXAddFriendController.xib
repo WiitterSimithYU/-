@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLXAddFriendController">
+            <connections>
+                <outlet property="friendAccount" destination="wzY-i5-SPH" id="xZP-Yi-1pF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="556"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要添加的好友账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzY-i5-SPH">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Jrm-7v-zcQ"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myd-aN-Zmg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="SF2-hN-lOx"/>
+                    </constraints>
+                    <state key="normal" title="添加好友"/>
+                    <connections>
+                        <action selector="addFriend" destination="-1" eventType="touchUpInside" id="FNM-ig-aj6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wzY-i5-SPH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="50V-2K-GHb"/>
+                <constraint firstItem="wzY-i5-SPH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="5au-jS-jCT"/>
+                <constraint firstAttribute="trailing" secondItem="Myd-aN-Zmg" secondAttribute="trailing" constant="118" id="7tU-ye-V7Z"/>
+                <constraint firstItem="Myd-aN-Zmg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="119" id="LoO-dM-JTo"/>
+                <constraint firstAttribute="trailing" secondItem="wzY-i5-SPH" secondAttribute="trailing" constant="59" id="Otw-mV-DO3"/>
+                <constraint firstItem="Myd-aN-Zmg" firstAttribute="top" secondItem="wzY-i5-SPH" secondAttribute="bottom" constant="101" id="avB-wO-RV8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-209" y="-47"/>
+        </view>
+    </objects>
+</document>

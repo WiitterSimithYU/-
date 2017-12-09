@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1Az-QX-iAt" userLabel="Register  View" customClass="ZLXRegisterView">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAq-GJ-hoH">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginView3" translatesAutoresizingMaskIntoConstraints="NO" id="uzS-gI-5z6"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sox-go-wjI">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjD-yq-XMl">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Sox-go-wjI" secondAttribute="trailing" constant="8" id="6jb-sL-rFQ"/>
+                        <constraint firstItem="uzS-gI-5z6" firstAttribute="top" secondItem="jAq-GJ-hoH" secondAttribute="top" id="8NP-02-zYG"/>
+                        <constraint firstAttribute="bottom" secondItem="uzS-gI-5z6" secondAttribute="bottom" id="9Wc-RX-mq5"/>
+                        <constraint firstItem="Sox-go-wjI" firstAttribute="leading" secondItem="jAq-GJ-hoH" secondAttribute="leading" constant="8" id="Kec-Z0-3dY"/>
+                        <constraint firstItem="ZjD-yq-XMl" firstAttribute="leading" secondItem="Sox-go-wjI" secondAttribute="leading" id="MdO-r0-Zi6"/>
+                        <constraint firstItem="Sox-go-wjI" firstAttribute="top" secondItem="jAq-GJ-hoH" secondAttribute="top" constant="8" id="aLK-7L-ect"/>
+                        <constraint firstItem="ZjD-yq-XMl" firstAttribute="height" secondItem="Sox-go-wjI" secondAttribute="height" id="cHz-Bv-LTg"/>
+                        <constraint firstItem="uzS-gI-5z6" firstAttribute="leading" secondItem="jAq-GJ-hoH" secondAttribute="leading" id="cUW-Nj-DGK"/>
+                        <constraint firstAttribute="bottom" secondItem="ZjD-yq-XMl" secondAttribute="bottom" id="dSB-dN-6sE"/>
+                        <constraint firstItem="ZjD-yq-XMl" firstAttribute="width" secondItem="Sox-go-wjI" secondAttribute="width" id="f5q-ng-ajZ"/>
+                        <constraint firstAttribute="trailing" secondItem="uzS-gI-5z6" secondAttribute="trailing" id="kz1-Z8-35V"/>
+                        <constraint firstItem="Sox-go-wjI" firstAttribute="height" secondItem="jAq-GJ-hoH" secondAttribute="height" multiplier="0.5" id="yV6-zl-RX6"/>
+                        <constraint firstItem="Sox-go-wjI" firstAttribute="top" secondItem="uzS-gI-5z6" secondAttribute="top" id="z9l-5h-Wnf"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="aLK-7L-ect"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLR-GS-6J3">
+                    <state key="normal" title="注册" backgroundImage="friendsTrend_login_click">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jAq-GJ-hoH" firstAttribute="top" secondItem="1Az-QX-iAt" secondAttribute="top" constant="17" id="7h6-JU-rBW"/>
+                <constraint firstAttribute="trailing" secondItem="gLR-GS-6J3" secondAttribute="trailing" constant="39" id="8Aj-k2-UsC"/>
+                <constraint firstAttribute="bottom" secondItem="gLR-GS-6J3" secondAttribute="bottom" constant="52" id="9hv-3K-s8w"/>
+                <constraint firstAttribute="bottom" secondItem="jAq-GJ-hoH" secondAttribute="bottom" constant="141" id="Tzm-lO-4Tk"/>
+                <constraint firstAttribute="bottom" secondItem="gLR-GS-6J3" secondAttribute="bottom" constant="52" id="U2B-iZ-5Ml"/>
+                <constraint firstItem="jAq-GJ-hoH" firstAttribute="leading" secondItem="1Az-QX-iAt" secondAttribute="leading" constant="32" id="UeR-wP-oty"/>
+                <constraint firstItem="gLR-GS-6J3" firstAttribute="leading" secondItem="1Az-QX-iAt" secondAttribute="leading" constant="40" id="ez7-rf-fKv"/>
+                <constraint firstItem="gLR-GS-6J3" firstAttribute="top" secondItem="jAq-GJ-hoH" secondAttribute="bottom" constant="57" id="jAi-aK-HEI"/>
+                <constraint firstAttribute="trailing" secondItem="jAq-GJ-hoH" secondAttribute="trailing" constant="32" id="vP8-aO-cZz"/>
+                <constraint firstItem="gLR-GS-6J3" firstAttribute="leading" secondItem="1Az-QX-iAt" secondAttribute="leading" constant="40" id="vc7-cY-KqZ"/>
+                <constraint firstAttribute="trailing" secondItem="gLR-GS-6J3" secondAttribute="trailing" constant="39" id="wl3-OF-mVn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8Aj-k2-UsC"/>
+                    <exclude reference="U2B-iZ-5Ml"/>
+                    <exclude reference="ez7-rf-fKv"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="RegisterBtn" destination="gLR-GS-6J3" id="IIu-hy-1Ia"/>
+            </connections>
+            <point key="canvasLocation" x="-236" y="-77"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LoginView3" width="300" height="60"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+    </resources>
+</document>

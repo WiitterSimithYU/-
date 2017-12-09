@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZLXTopicPictureView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="248"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a8p-Df-fRb"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="LXn-mz-i2I">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="I9y-uV-HQ0"/>
+                        <constraint firstAttribute="height" constant="25" id="i4G-4q-Sad"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-D8-XzU">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="see-big-picture-background" translatesAutoresizingMaskIntoConstraints="NO" id="OMi-R4-Goc"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndk-jP-Ylk">
+                            <state key="normal" title="点击查看大图" image="see-big-picture">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="SeeBigImageView:" destination="iN0-l3-epB" eventType="touchUpInside" id="bzq-xH-Pyv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ndk-jP-Ylk" firstAttribute="centerY" secondItem="LIT-D8-XzU" secondAttribute="centerY" constant="1" id="VZu-xc-eMw"/>
+                        <constraint firstAttribute="height" constant="35" id="a2x-0f-94p"/>
+                        <constraint firstAttribute="trailing" secondItem="OMi-R4-Goc" secondAttribute="trailing" id="b7X-Cm-ekF"/>
+                        <constraint firstItem="OMi-R4-Goc" firstAttribute="leading" secondItem="LIT-D8-XzU" secondAttribute="leading" id="dUp-5d-aHg"/>
+                        <constraint firstItem="OMi-R4-Goc" firstAttribute="top" secondItem="LIT-D8-XzU" secondAttribute="top" id="frY-Mc-kqT"/>
+                        <constraint firstAttribute="bottom" secondItem="OMi-R4-Goc" secondAttribute="bottom" id="tN8-Qx-8Tz"/>
+                        <constraint firstItem="Ndk-jP-Ylk" firstAttribute="centerX" secondItem="LIT-D8-XzU" secondAttribute="centerX" constant="1" id="wmb-6g-JM7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVT-Xc-vwo">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="bcN-0H-FhR"/>
+                        <constraint firstAttribute="height" constant="100" id="ogC-Qc-ozJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lVT-Xc-vwo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="1" id="00j-P7-cqP"/>
+                <constraint firstItem="LXn-mz-i2I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0P9-HW-0r3"/>
+                <constraint firstItem="LXn-mz-i2I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="33B-lt-U3Z"/>
+                <constraint firstAttribute="trailing" secondItem="LIT-D8-XzU" secondAttribute="trailing" id="5zf-nK-DHC"/>
+                <constraint firstItem="a8p-Df-fRb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HEw-P4-xDc"/>
+                <constraint firstAttribute="bottom" secondItem="LIT-D8-XzU" secondAttribute="bottom" id="KGj-X2-9dC"/>
+                <constraint firstItem="a8p-Df-fRb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MT1-9S-kcO"/>
+                <constraint firstItem="LIT-D8-XzU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UMX-Dq-cfd"/>
+                <constraint firstAttribute="bottom" secondItem="a8p-Df-fRb" secondAttribute="bottom" id="XU1-5C-wfh"/>
+                <constraint firstAttribute="trailing" secondItem="a8p-Df-fRb" secondAttribute="trailing" id="kGg-jS-pyF"/>
+                <constraint firstItem="lVT-Xc-vwo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="1" id="tBK-Dy-xB9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="GifImage" destination="LXn-mz-i2I" id="reK-tF-Eem"/>
+                <outlet property="PictureImage" destination="a8p-Df-fRb" id="NAk-UF-ipz"/>
+                <outlet property="ProgressView" destination="lVT-Xc-vwo" id="vIv-We-bcx"/>
+                <outlet property="SeeBigView" destination="LIT-D8-XzU" id="fxF-xu-Az8"/>
+            </connections>
+            <point key="canvasLocation" x="-2036" y="-330"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common-gif" width="31" height="31"/>
+        <image name="see-big-picture" width="19" height="19"/>
+        <image name="see-big-picture-background" width="285" height="43"/>
+    </resources>
+</document>

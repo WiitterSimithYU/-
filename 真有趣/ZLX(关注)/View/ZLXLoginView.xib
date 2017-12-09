@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DaL-vS-DTF" userLabel="Login  View" customClass="ZLXLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBL-p6-079">
+                    <state key="normal" title="登录" backgroundImage="friendsTrend_login_click">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4J-50-7Te">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginView3" translatesAutoresizingMaskIntoConstraints="NO" id="Lcj-7z-m04"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFF-xP-lR7">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fcA-by-6wc">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="LFF-xP-lR7" firstAttribute="top" secondItem="l4J-50-7Te" secondAttribute="top" constant="8" id="0wv-Sm-B1O"/>
+                        <constraint firstItem="LFF-xP-lR7" firstAttribute="top" secondItem="Lcj-7z-m04" secondAttribute="top" id="6cE-ia-atA"/>
+                        <constraint firstItem="fcA-by-6wc" firstAttribute="height" secondItem="LFF-xP-lR7" secondAttribute="height" id="G7o-Ji-AY1"/>
+                        <constraint firstItem="LFF-xP-lR7" firstAttribute="height" secondItem="l4J-50-7Te" secondAttribute="height" multiplier="0.5" id="GDK-cc-J3O"/>
+                        <constraint firstItem="LFF-xP-lR7" firstAttribute="leading" secondItem="l4J-50-7Te" secondAttribute="leading" constant="8" id="KXX-gS-0xM"/>
+                        <constraint firstAttribute="trailing" secondItem="LFF-xP-lR7" secondAttribute="trailing" constant="8" id="OvZ-Ag-IGU"/>
+                        <constraint firstAttribute="bottom" secondItem="fcA-by-6wc" secondAttribute="bottom" id="g6G-cl-5fU"/>
+                        <constraint firstItem="Lcj-7z-m04" firstAttribute="leading" secondItem="l4J-50-7Te" secondAttribute="leading" id="iNL-md-yrK"/>
+                        <constraint firstAttribute="trailing" secondItem="Lcj-7z-m04" secondAttribute="trailing" id="j8a-iq-BRN"/>
+                        <constraint firstItem="fcA-by-6wc" firstAttribute="width" secondItem="LFF-xP-lR7" secondAttribute="width" id="kbP-wZ-acW"/>
+                        <constraint firstAttribute="bottom" secondItem="Lcj-7z-m04" secondAttribute="bottom" id="l3w-RW-c7C"/>
+                        <constraint firstItem="Lcj-7z-m04" firstAttribute="top" secondItem="l4J-50-7Te" secondAttribute="top" id="q9u-A0-alE"/>
+                        <constraint firstItem="fcA-by-6wc" firstAttribute="leading" secondItem="LFF-xP-lR7" secondAttribute="leading" id="wok-26-SPX"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0wv-Sm-B1O"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dBL-p6-079" secondAttribute="trailing" constant="39" id="4FS-Es-Ym0"/>
+                <constraint firstItem="dBL-p6-079" firstAttribute="top" secondItem="l4J-50-7Te" secondAttribute="bottom" constant="56" id="4lZ-df-isf"/>
+                <constraint firstItem="l4J-50-7Te" firstAttribute="top" secondItem="DaL-vS-DTF" secondAttribute="top" constant="18" id="Nbp-jr-cj6"/>
+                <constraint firstItem="dBL-p6-079" firstAttribute="centerX" secondItem="DaL-vS-DTF" secondAttribute="centerX" id="QnJ-PQ-HfK"/>
+                <constraint firstItem="l4J-50-7Te" firstAttribute="centerX" secondItem="DaL-vS-DTF" secondAttribute="centerX" id="Zla-tL-Bzx"/>
+                <constraint firstAttribute="bottom" secondItem="dBL-p6-079" secondAttribute="bottom" constant="52" id="ayr-iq-kGl"/>
+                <constraint firstAttribute="bottom" secondItem="dBL-p6-079" secondAttribute="bottom" constant="52" id="bsN-bd-wfd"/>
+                <constraint firstItem="dBL-p6-079" firstAttribute="leading" secondItem="DaL-vS-DTF" secondAttribute="leading" constant="40" id="kwz-ge-xif"/>
+                <constraint firstAttribute="bottom" secondItem="l4J-50-7Te" secondAttribute="bottom" constant="140" id="qD6-zx-cAG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4FS-Es-Ym0"/>
+                    <exclude reference="bsN-bd-wfd"/>
+                    <exclude reference="kwz-ge-xif"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="LonginButton" destination="dBL-p6-079" id="7Ed-gD-gf5"/>
+            </connections>
+            <point key="canvasLocation" x="62" y="-82"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LoginView3" width="300" height="60"/>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+    </resources>
+</document>

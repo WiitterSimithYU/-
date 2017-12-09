@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x771f;&#x6709;&#x8da3;/ZLX(Main)/Controller/ZLXImageViewController.m"
+            timestampString = "512298448.781048"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-ChangeImageView"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[ZLXImageViewController ChangeImageView]_block_invoke"
+                  moduleName = "&#x771f;&#x6709;&#x8da3;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%9C%9F%E6%9C%89%E8%B6%A3/%E7%9C%9F%E6%9C%89%E8%B6%A3/ZLX(Main)/Controller/ZLXImageViewController.m"
+                  timestampString = "514977379.335909"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[ZLXImageViewController ChangeImageView]_block_invoke_2"
+                  moduleName = "&#x771f;&#x6709;&#x8da3;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/%E7%9C%9F%E6%9C%89%E8%B6%A3/%E7%9C%9F%E6%9C%89%E8%B6%A3/ZLX(Main)/Controller/ZLXImageViewController.m"
+                  timestampString = "514977379.338176"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLXCommentsControllerViewController">
+            <connections>
+                <outlet property="TableView" destination="euj-4j-Pu3" id="3nk-yE-OPf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iYH-fJ-3aH">
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="euj-4j-Pu3">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="euj-4j-Pu3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IOe-oZ-2uv"/>
+                <constraint firstAttribute="bottom" secondItem="euj-4j-Pu3" secondAttribute="bottom" constant="30" id="ZEf-Vd-2N6"/>
+                <constraint firstAttribute="trailing" secondItem="euj-4j-Pu3" secondAttribute="trailing" id="a2Y-Oe-f02"/>
+                <constraint firstItem="iYH-fJ-3aH" firstAttribute="top" secondItem="euj-4j-Pu3" secondAttribute="bottom" id="bEO-7p-atA"/>
+                <constraint firstAttribute="trailing" secondItem="iYH-fJ-3aH" secondAttribute="trailing" id="dLK-gZ-FBA"/>
+                <constraint firstItem="iYH-fJ-3aH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eQl-Dj-WxN"/>
+                <constraint firstItem="euj-4j-Pu3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jp7-kd-fpn"/>
+                <constraint firstAttribute="bottom" secondItem="iYH-fJ-3aH" secondAttribute="bottom" id="vIh-yw-Ts2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-141" y="25"/>
+        </view>
+    </objects>
+</document>
